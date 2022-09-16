@@ -4,12 +4,14 @@
     --back-color: #FFFFFF;
     --sbc: #2F303A;
     --contact-color: #757575;
+    --white-whis-transparency: rgba(255, 255, 255, 0.6);
+    --bgr-staff: #F5F4FA;
+    
 }
 
 body {
     background-color: var(--back-color);
     color: var(--primery-text-colot);
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -32,50 +34,48 @@ body {
     color: var(--button-color) ;
 }
 
-.logo-studio,
-.logo-web{
+.site-logo.plus{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-}
-
-.site-logo.logo,
-.site-logo.logo-web{
     text-decoration: none;
+    letter-spacing: 0.03em;
 }
 
-.site-nav a {
-    font-family: 'Roboto';
+
+
+.navigetion.plus {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--primery-text-colot);
+    letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus{
+.navigetion.plus:hover,
+.navigetion.plus:focus{
     color: var(--button-color)
 }
 
-.contakt a {
-    font-family: 'Roboto';
+.contakt.mee {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--contact-color);
+    letter-spacing: 0.02em;
+    
 }
 
 .site-nav a.current {
     color: var(--button-color);
 }
 
-.contakt a:hover,
-.contakt a:focus{
-    color: var(--button-color);}
 
-.logo-studio{
+
+.logo-studio
+{
     color:var(--primery-text-colot);
 }
 
@@ -84,22 +84,19 @@ body {
 ---------------------HERO------------------------
 
  .hero.big{
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    letter-spacing: 0.06em;
 
 }
 .btn {
 
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -109,16 +106,23 @@ body {
     color: var(--back-color);
     background-color: var(--button-color);
 }
-
+.btn.primery:hover,
+.btn.primery:focus,
 .btn.primery:active{
     background-color: #188CE8;
 }
 
 .btn.secondary{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
     background-color: #F5F4FA;
     color: var(--primery-text-colot);
 }
 
+.btn.secondary:hover,
+.btn.secondary:focus,
 .btn.secondary:active{
     background-color: var(--button-color);
     color: var(--back-color);
@@ -131,8 +135,8 @@ body {
 
 -----------------feature-----------
 
-.about .title{
-    font-family: 'Roboto';
+.about .title
+{    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -140,55 +144,108 @@ body {
 }
 
 .about .additional-text{
-    font-family: 'Roboto';
+
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contact-color);
+    letter-spacing: 0.03em;
 }
 
 .we-do .what-we-do{
-    font-family: 'Roboto';
+   
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.7;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
 
 }
+
+---------------staff-----------
+
+
+.title.staff{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.staff.name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+.staff.posicion{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+.staff{
+    background-color: var(--bgr-staff);
+}
+.downpicture{
+    background-color: var(--back-color);
+}
+
+
 -----------footer-------------
 
-.logo-web{
-    color: var(--button-color) ;
-}
 
-.down-studio{
+.darkside{
     color: var(--back-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    background-color: var(--sbc);
 }
+    
 
-.logo-web{
-    color: var(--button-color);
-}
 
-.address.map{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--back-color);
-}
 
 .address.contact{
-    font-family: 'Roboto';
+  
     font-style: normal;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--white-whis-transparency)
+}
+
+
+.address.map{
+  
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--back-color);
 }
 
 
 
+.logo.logo-web{
+    color: var(--button-color);
+    
+}
+.logo.down-studio{
+    color: var(--back-color);
+    
+}
+
+------------------portfolio-------------
+.choice.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primery-text-colot);
+}
+
+.choice.text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color:var(--contact-color);
+}
