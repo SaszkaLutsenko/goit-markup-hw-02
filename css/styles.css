@@ -25,9 +25,14 @@ body {
 
 .big{
     text-transform: uppercase;
+
+}
+.title{
+font-weight: 700;
+letter-spacing: 0.03em;
 }
 
---header--
+/*header*/
 
 
 .logo-web{
@@ -80,19 +85,21 @@ body {
     color:var(--primery-text-colot);
 }
 
-
-
----------------------HERO------------------------
-
- .hero.big{
+.hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--back-color);
     letter-spacing: 0.06em;
-
+    
+    text-align: center;
+    
 }
+
+/*hero*/
+
+
 .btn {
 
     font-weight: 700;
@@ -114,6 +121,7 @@ body {
 }
 
 .btn.secondary{
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
@@ -134,35 +142,38 @@ body {
     background-color: var(--sbc);
 }
 
------------------feature-----------
+/*feature*/
 
-.about .title
-{    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+.feature-title{
+  
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+
+
+color: var(--primery-text-colot);
 }
 
-.about .additional-text{
-
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--contact-color);
-    letter-spacing: 0.03em;
+.operations-text{  
+font-size: 14px;
+line-height: 1.71;
+color: var(--contact-color);
+letter-spacing: 0.03em;
 }
+
+
+/*what-we-do*/
 
 .we-do .what-we-do{
    
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
+
 
 }
 
----------------staff-----------
+/*staff*/
 
 
 .title.staff{
@@ -185,15 +196,13 @@ body {
     letter-spacing: 0.03em;
     color: var(--contact-color);
 }
-.staff{
-    background-color: var(--bgr-staff);
-}
+
+
 .downpicture{
     background-color: var(--back-color);
 }
 
-
------------footer-------------
+/*footer*/
 
 
 .darkside{
@@ -222,6 +231,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--back-color);
 }
+.address.map:hover,
+.address.map:focus,
+.address.contact:focus,
+.address.contact:hover{
+    color: var(--button-color);
+}
 
 
 
@@ -234,7 +249,7 @@ body {
     
 }
 
-------------------portfolio-------------
+/*portfolio*/
 
 .list.choice{
     color: var(--primery-text-colot);
@@ -268,6 +283,8 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+
   
 
 
